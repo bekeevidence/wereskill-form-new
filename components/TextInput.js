@@ -1,9 +1,10 @@
-import React from "react";
+import { Input } from "@material-tailwind/react";
 
 const TextInput = ({ label, placeholder, type, name, id, value, onChange }) => {
   return (
     <div className="flex relative flex-col">
-      <label
+      <Input size="md" label={label} value={value} onChange={onChange} />
+      {/* <label
         className="absolute rounded-sm text-xs -top-1 bg-white px-2 left-3"
         htmlFor={id}
       >
@@ -18,7 +19,7 @@ const TextInput = ({ label, placeholder, type, name, id, value, onChange }) => {
         name={name}
         id={id}
         className="capitalize tracking-wide border my-1 outline-none p-2"
-      />
+      /> */}
     </div>
   );
 };

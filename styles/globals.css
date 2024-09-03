@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+@layer components {
+  .home {
+    background-image: url("coding.jpg");
+    background-size: cover;
+  }
+}
